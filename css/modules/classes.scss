@@ -1,0 +1,43 @@
+%noselect {
+  user-select: none;
+}
+%absolutely-centered{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  position: absolute;
+}
+%display-flex{
+  display: flex;
+}
+
+.is-shown{
+  display: block;
+}
+.is-hidden{
+  display: none;
+}
+.is-visible{
+  visibility: visible;
+  opacity:1;
+}
+.is-invisible{
+  visibility: hidden;
+  opacity:0;
+}
+
+%pseudo-clear{
+  content:'';
+  width:0px;
+  height:0px;
+  clear:both;
+  display: block;
+}
+.clear{
+  width:0px;
+  height:0px;
+  clear:both;
+  display: block;
+}

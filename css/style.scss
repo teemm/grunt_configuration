@@ -1,0 +1,43 @@
+//TODO GRIDS
+@import 'modules/modules';
+@import 'partials/partials';
+
+::selection {
+  background: rgba($website-brand-secondary,.9);
+  color: $website-brand-primary;
+}
+
+html * {
+  transform: translate3d(0,0,0);
+}
+html,body{
+  width:100%;
+  height:100%; //For full pages
+  min-width: 320px;
+}
+html{
+  &.no-touch{
+    //All the hover events go here
+  }
+  &.mobile{
+    //All mobile stuff goes here
+    cursor:pointer;
+  }
+  &.loaded{
+    body{
+      @extend .is-visible;
+    }
+  }
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  color:$website-text-color;
+  overflow:hidden;
+  position: relative;
+  @extend .is-invisible;
+  transition: opacity $body-fadein-time ease 0s;
+  background-color: $website-brand-secondary;
+}
+
+@import 'pages/pages';
+@import 'partials/media';

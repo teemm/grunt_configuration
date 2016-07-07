@@ -1,0 +1,12 @@
+@function to-string($value) {
+  @return inspect($value);
+}
+
+@function capitalize($string) {
+  $string : to-string($string);
+  @return to-upper-case(str-slice($string, 1, 1)) + str-slice($string, 2);
+}
+
+@function em($px,$context:16){
+  @return ($px / $context)*1em;
+}

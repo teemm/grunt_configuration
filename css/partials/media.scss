@@ -1,0 +1,36 @@
+/**
+
+List of Common Resolutions:
+
+2560x1440
+1920x1080
+1680x1050
+1600x900
+1440x900
+1366x768
+1280x800
+1024x768
+800x600
+768x1024
+600x960
+414x736
+320x568
+320x480
+
+*/
+
+@-ms-viewport{
+  width:device-width;
+}
+@viewport{
+  width:device-width;
+}
+@media screen and (min-width:2400px){
+
+}
+@media screen and (max-width:1920px){
+
+}
+@media screen and (max-height:600px){
+
+}

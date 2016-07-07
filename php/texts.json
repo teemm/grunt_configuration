@@ -1,0 +1,35 @@
+{
+    "pages": {
+
+    },
+    "tags": {
+        "title": {
+            "en": "",
+            "ge": ""
+        },
+        "description": {
+            "en": "",
+            "ge": ""
+        },
+        "url": {
+            "en": "/en",
+            "ge": "/ge"
+        },
+        "fb-title": {
+          "en": "",
+          "ge": ""
+        },
+        "fb-description": {
+            "en": "",
+            "ge": ""
+        },
+        "image" : {
+            "en" : "",
+            "ge" : ""
+        },
+        "app-id" : {
+            "en" : "",
+            "ge" : ""
+        }
+    }
+}
