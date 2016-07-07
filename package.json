@@ -1,7 +1,7 @@
 {
   "name": "basic.template.package",
   "version": "1.0.0",
-  "author": "Goga Chinchaladze",
+  "author": "Me",
   "description": "This is configuration of grunt.js for my basic template",
   "dependencies": {
     "grunt": "~0.4.5",
