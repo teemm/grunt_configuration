@@ -21,6 +21,22 @@ module.exports = function(grunt) {
         }
       }
     },
+    svgstore: {
+      options: {
+        //prefix : 'icon-', // This will prefix each ID
+        inheritviewbox: true,
+        svg: { // will add and overide the the default xmlns="http://www.w3.org/2000/svg" attribute to the resulting SVG
+          viewBox : '0 0 100 100',
+          xmlns: 'http://www.w3.org/2000/svg'
+        }
+      },
+      default : {
+        files: {
+          'img/svg-sprite.svg': ['img/svg/*.svg'],
+        },
+      },
+    },
+
     postcss: {
       options: {
         map: {
@@ -54,6 +70,10 @@ module.exports = function(grunt) {
       scripts: {
         files: ['js/lib/*.js','js/main.js'],
         tasks: ['concat', 'uglify']
+      },
+      svg: {
+        files:  ['img/svg/*.svg'],
+        tasks: ['svgstore']
       }
     }
   });
@@ -63,7 +83,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-postcss');
-
+  grunt.loadNpmTasks('grunt-svgstore');
   // Default task(s).
   grunt.registerTask('default', ['watch']);
 };

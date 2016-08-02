@@ -79,6 +79,10 @@ $is_tablet = $detect->isTablet();
   <section>section</section>
   <footer>footer</footer>
 
+  <svg viewBox="0 0 100 100" class="icon">
+    <use xlink:href="#LB"></use>
+  </svg>
+  <?php include("img/svg-sprite.svg"); ?>
   <?php
     // if($isMobile){
       // echo "<script>var isMobile = true;</script>";
