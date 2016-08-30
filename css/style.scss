@@ -13,7 +13,9 @@ html * {
 html,body{
   width:100%;
   height:100%; //For full pages
-  min-width: 320px;
+  min-width: em(320);
+  //min-width: em(320); em
+  //min-width: vw(320); veivport
 }
 html{
   &.no-touch{
@@ -38,6 +40,5 @@ body{
   transition: opacity $body-fadein-time ease 0s;
   background-color: $website-brand-secondary;
 }
-
 @import 'pages/pages';
 @import 'partials/media';

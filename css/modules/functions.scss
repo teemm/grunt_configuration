@@ -10,3 +10,12 @@
 @function em($px,$context:16){
   @return ($px / $context)*1em;
 }
+@function vw($target) {
+  $vw-context: (1440 * 0.01) * 1;
+  @return ($target / $vw-context) * 1vw;
+}
+
+//@function get-vw($target) {
+//  $vw-context: ( * 0.01) * 1px;
+//  @return ($target / $vw-context) * 1vw;
+//}
